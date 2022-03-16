@@ -1,0 +1,267 @@
+:root {
+    --linkcolor: rgba(36, 47, 68, 0.562);
+    --linkhovercolor: rgb(252, 247, 247);
+    --titlecolor: rgb(39, 39, 51);
+    --subtitlecolor: rgb(57, 57, 63);
+    --backgroundcolor: rgb(255, 240, 250);
+    --textcolor: rgba(68, 36, 52, 0.863);
+    --footercolor: rgba(61, 39, 68, 0.562);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    scroll-behavior: smooth;
+    /* overflow: hidden; locks scrolling */
+}
+
+body {
+    background-color: var(--backgroundcolor);
+    z-index: 0;
+}
+
+
+/*                                    
+  __                 _   
+ / _|_ __ ___  _ __ | |_ 
+| |_| '__/ _ \| '_ \| __|
+|  _| | | (_) | | | | |_ 
+|_| |_|  \___/|_| |_|\__|
+                         */
+
+h2.heading {
+    font-family: 'Gaegu', cursive;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+p.text {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.front {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    /*background-image: url(./assets/img/bg/bg1.jpg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    filter: drop-shadow(0 4px 10px black);
+}
+
+.title {
+    font-size: 5em;
+    margin-top: 13vh;
+    text-transform: uppercase;
+    opacity: 0.75;
+    line-height: 1em;
+}
+
+.title h2 {
+    color: var(--titlecolor);
+    font-family: 'Gaegu', cursive;
+    letter-spacing: 0.2em;
+}
+
+.title p {
+    font-family: 'Gaegu', cursive;
+    font-size: 0.9em;
+    letter-spacing: 5px;
+    line-height: 1em;
+    color: var(--subtitlecolor);
+}
+
+p.scroll {
+    font-size: 0.34em;
+    letter-spacing: 0;
+    color: var(--linkcolor);
+}
+
+span.scroll {
+    font-size: 0.7em;
+}
+
+a.scroll {
+    color: var(--linkcolor);
+    text-decoration: none;
+}
+
+a.scroll:visited {
+    color: var(--linkcolor);
+    text-decoration: none;
+}
+
+a.scroll:hover {
+    color: var(--linkhovercolor);
+    text-decoration: none;
+}
+
+
+/* 
+ _ __   __ ___   __
+| '_ \ / _` \ \ / /
+| | | | (_| |\ V / 
+|_| |_|\__,_| \_/    */
+
+nav {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+nav button {
+    margin: 0 2em;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--linkcolor);
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-family: 'Gaegu', 'Open Sans', sans-serif;
+}
+
+nav button:first-child {
+    margin-left: 8em;
+}
+
+nav button:last-child {
+    margin-right: 8em;
+}
+
+nav a {
+    color: var(--linkcolor);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: var(--linkcolor);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav button:hover {
+    color: var(--linkhovercolor);
+}
+
+nav a:hover {
+    color: var(--linkhovercolor);
+}
+
+
+/*                               _       _ _       
+  __ _  ___ _ __   ___ _ __ __ _| |   __| (_)_   __
+ / _` |/ _ \ '_ \ / _ \ '__/ _` | |  / _` | \ \ / /
+| (_| |  __/ | | |  __/ | | (_| | | | (_| | |\ V / 
+ \__, |\___|_| |_|\___|_|  \__,_|_|  \__,_|_| \_/  
+ |___/                                             */
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 6em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container2 .mediabox,
+.container2 .wordbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 .wordbox {
+    padding: 10px 50px 0px 50px;
+}
+
+.container .mediabox {
+    padding: 0 50px;
+}
+
+.container2 .wordbox h2 {
+    text-align: left;
+    font-size: 3em;
+    color: var(--titlecolor);
+    border-radius: 10px;
+}
+
+.container2 .wordbox p {
+    font-size: 0.94em;
+    letter-spacing: 0.1em;
+    text-align: left;
+    line-height: 1.75em;
+    color: var(--textcolor);
+}
+
+.container2 .map {
+    border: 1px solid var(--linkcolor);
+    border-radius: 10px;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.664));
+    width: 600px;
+    height: 450px;
+}
+
+.container2 img {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.caption {
+    color: rgb(219, 219, 219);
+    background-color: rgba(0, 0, 0, 0.644);
+    position: relative;
+    height: 1em;
+    top: -2em;
+    padding: 0.5em 0;
+    border-radius: 0 0 10px 10px;
+    font-family: 'Gaegu', 'Open Sans', sans-serif;
+}
+
+
+/*
+  __             _            
+ / _| ___   ___ | |_ ___ _ __ 
+| |_ / _ \ / _ \| __/ _ \ '__|
+|  _| (_) | (_) | ||  __/ |   
+|_|  \___/ \___/ \__\___|_|   */
+
+footer {
+    height: 4em;
+    padding: 1em;
+    margin-top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--footercolor);
+    font-family: 'Gaegu', 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin: 0 2em;
+    letter-spacing: 0.3em;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--titlecolor);
+}
+
+footer a:visited {
+    text-decoration: none;
+    color: var(--titlecolor);
+}
